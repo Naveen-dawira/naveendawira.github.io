@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Naveen Dawira Portfolio</title>
+</head>
+<body>
+    <h1>Welcome to My Portfolio</h1>
+    <p>Check out my projects below:</p>
+    <ul>
+        <li><a href="https://highendbywaniyaaly.myshopify.com/">Project 1</a></li>
+        <li><a href="https://tskl.nixorcorporate.com/">Project 2</a></li>
+        <li><a href="https://nlxdebates.wordpress.com/">Project 2</a></li>
+        <li><a href="https://nfs67.wordpress.com/">Project 2</a></li>
+    </ul>
+</body>
+</html>
