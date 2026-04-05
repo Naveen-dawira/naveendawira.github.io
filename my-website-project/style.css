@@ -1,0 +1,330 @@
+
+/* 1. BASIC RESET - Removes default browser margins/padding */
+* {
+    margin: 0;      /* Remove space around elements */
+    padding: 0;     /* Remove padding inside elements */
+    box-sizing: border-box; /* Makes sizing calculations easier */
+}
+
+/* 2. BODY STYLES - Applies to entire page */
+body {
+    font-family: Arial, sans-serif;  /* Simple, readable font */
+    /* GRADIENT BACKGROUND (Lab requirement) */
+    background: linear-gradient(to bottom right, #cb1111, #312f2f,#cb1111  );
+    color: #333;                     /* Dark gray text color */
+    line-height: 1.6;                /* Space between lines */
+}
+
+/* ========== NAVIGATION BAR STYLES ========== */
+/* This styles the navigation menu from Lab 3 */
+.navbar {
+    background-color: #333;           /* Dark background */
+    display: flex;                    /* Makes items horizontal */
+    justify-content: center;          /* Centers items */
+    list-style: none;                 /* Removes bullet points */
+    padding: 15px;                    /* Space inside navbar */
+}
+
+/* Style each list item in navbar */
+.navbar li {
+    margin: 0 20px;                   /* Space between menu items */
+}
+
+/* Style the links in navbar */
+.navbar a {
+    color: white;                     /* White text */
+    text-decoration: none;            /* Remove underline */
+    padding: 10px 20px;               /* Space inside links */
+    border-radius: 5px;               /* Rounded corners */
+}
+
+/* Hover effect - when mouse over link */
+.navbar a:hover {
+    background-color: #4974be;        /* Blue background on hover */
+}
+
+/* ========== HEADER STYLES ========== */
+header {
+    text-align: center;               /* Center all text */
+    padding: 50px;                    /* Space inside header */
+    color: white;                     /* White text */
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black */
+}
+
+header h1 {
+    font-size: 2.5rem;                /* Large heading text */
+    margin-bottom: 10px;              /* Space below heading */
+}
+
+.welcome-box {
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+}
+/* ========== SECTION STYLES ========== */
+/* Applies to all sections with class="section" */
+.section {
+    background-color: white;          /* White background */
+    margin: 30px auto;                /* Space around, centered */
+    padding: 30px;                    /* Space inside */
+    width: 90%;                       /* 90% of screen width */
+    max-width: 1000px;                /* But not wider than 1000px */
+    border-radius: 10px;              /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Light shadow */
+}
+
+/* Section headings */
+
+.section h2 {
+    color: #2c3e50;                   /* Dark blue color */
+    text-align: center;               /* Center the heading */
+    margin-bottom: 30px;              /* Space below heading */
+    padding-bottom: 10px;             /* Space below text */
+    border-bottom: 2px solid #000000; /* Purple line under heading */
+}
+
+/* ========== FORM STYLES (Lab 2) ========== */
+/* Style for form containers */
+.form-box {
+    background-color: #f9f9f9;        /* Light gray background */
+    padding: 25px;                    /* Space inside */
+    margin-bottom: 30px;              /* Space below form */
+    border-radius: 10px;              /* Rounded corners */
+    border-left: 5px solid #000000;   /* Blue left border */
+}
+
+/* Form headings */
+.form-box h3 {
+    color: #2c3e50;                   /* Dark blue */
+    margin-bottom: 20px;              /* Space below heading */
+}
+
+/* Form labels */
+.form-box label {
+    display: block;                   /* Makes label take full width */
+    margin: 10px 0 5px;               /* Space around label */
+    font-weight: bold;                /* Makes text bold */
+}
+
+/* Style ALL form inputs (text boxes, dropdowns, textareas) */
+.form-box input, 
+.form-box select, 
+.form-box textarea {
+    width: 100%;                      /* Full width of container */
+    padding: 10px;                    /* Space inside input */
+    margin-bottom: 15px;              /* Space below input */
+    border: 1px solid #ddd;           /* Light gray border */
+    border-radius: 5px;               /* Rounded corners */
+}
+
+/* When user clicks in input field */
+.form-box input:focus,
+.form-box textarea:focus {
+    border-color: #6a11cb;            /* Purple border when focused */
+    outline: none;                    /* Remove default outline */
+}
+
+/* Style for radio button and checkbox groups */
+.radio-group, .checkbox-group {
+    background-color: #f0f0f0;        /* Light gray background */
+    padding: 15px;                    /* Space inside */
+    margin: 15px 0;                   /* Space above/below */
+    border-radius: 5px;               /* Rounded corners */
+}
+
+/* Labels inside radio/checkbox groups */
+.radio-group label, 
+.checkbox-group label {
+    display: inline-block;            /* Makes labels sit side-by-side */
+    margin-right: 20px;               /* Space between labels */
+    font-weight: normal;              /* Not bold */
+}
+
+/* Button styles */
+button {
+    background-color: #cb1111;        /* Purple background */
+    color: white;                     /* White text */
+    padding: 12px 25px;               /* Space inside button */
+    border: none;                     /* No border */
+    border-radius: 5px;               /* Rounded corners */
+    cursor: pointer;                  /* Shows hand cursor on hover */
+    font-size: 16px;                  /* Text size */
+    margin-top: 10px;                 /* Space above button */
+    width: 100%;                      /* Full width */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #000000;        /* Changes to blue on hover */
+}
+
+/* ========== IFRAME STYLES (Lab 2) ========== */
+.iframe-box {
+    background-color: #f9f9f9;        /* Light gray background */
+    padding: 20px;                    /* Space inside */
+    border-radius: 10px;              /* Rounded corners */
+    margin-top: 30px;                 /* Space above iframe */
+}
+
+/* The embedded webpage */
+.iframe-box iframe {
+    width: 100%;                      /* Full width */
+    height: 300px;                    /* Fixed height */
+    border: 1px solid #ddd;           /* Light gray border */
+    border-radius: 5px;               /* Rounded corners */
+}
+
+/* ========== DIVISION/BOX STYLES (Lab 3) ========== */
+/* Container for all boxes */
+.division-container {
+    display: flex;                    /* Makes boxes sit side-by-side */
+    flex-wrap: wrap;                  /* Allows wrapping to next line */
+    gap: 20px;                        /* Space between boxes */
+    margin-top: 30px;                 /* Space above container */
+}
+
+/* Basic box styles - applies to ALL boxes */
+.box {
+    flex: 1;                          /* Boxes share equal space */
+    min-width: 250px;                 /* Minimum width before wrapping */
+    padding: 25px;                    /* Space inside box */
+    border-radius: 10px;              /* Rounded corners */
+    text-align: center;               /* Center text inside */
+}
+
+/* Box headings */
+.box h3 {
+    color: white;                     /* White text */
+    padding: 10px;                    /* Space around text */
+    margin-bottom: 15px;              /* Space below heading */
+    border-radius: 5px;               /* Rounded corners */
+}
+
+/* Box paragraph text */
+.box p {
+    color: #333;                      /* Dark gray text */
+}
+
+/* ===== INDIVIDUAL BOX STYLES ===== */
+/* Each box has different styles to show CSS box model */
+
+/* Box 1 - Shows basic box model */
+.box1 {
+    background-color: white;          /* White background */
+    border: 2px solid #000000;        /* Purple border (2px thick) */
+    margin: 10px;                     /* Space outside box */
+    padding: 25px;                    /* Space inside box */
+}
+
+/* Box 1 heading */
+.box1 h3 {
+    background-color: #cb1111;        /* Purple background */
+}
+
+/* Box 2 - Different margin/padding */
+.box2 {
+    background-color: white;          /* White background */
+    border: 2px solid #000000;        /* Blue border */
+    margin: 15px;                     /* More margin than box1 */
+    padding: 30px;                    /* More padding than box1 */
+}
+
+.box2 h3 {
+    background-color: #cb1111;        /* Blue background */
+}
+
+/* Box 3 - Even more margin/padding */
+.box3 {
+    background-color: white;          /* White background */
+    border: 2px solid #000000;        /* Pink border */
+    margin: 20px;                     /* Most margin */
+    padding: 35px;                    /* Most padding */
+}
+
+.box3 h3 {
+    background-color: #cb1111;        /* Pink background */
+}
+
+/* ========== IMAGE GALLERY STYLES (Lab 3) ========== */
+/* Container for gallery items */
+.gallery {
+    display: flex;                    /* Makes images sit side-by-side */
+    flex-wrap: wrap;                  /* Allows wrapping to next line */
+    gap: 20px;                        /* Space between images */
+    justify-content: center;          /* Centers images */
+}
+
+/* Each gallery item (image + description) */
+.gallery-item {
+    width: 300px;                     /* Fixed width for each item */
+    background-color: white;          /* White background */
+    border-radius: 10px;              /* Rounded corners */
+    overflow: hidden;                 /* Hides anything outside box */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Light shadow */
+}
+
+/* Hover effect for gallery items */
+.gallery-item:hover {
+    transform: translateY(-5px);      /* Moves item up 5px on hover */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Darker shadow on hover */
+}
+
+/* Images inside gallery */
+.gallery-item img {
+    width: 100%;                      /* Makes image fill container */
+    height: 200px;                    /* Fixed height */
+    object-fit: cover;                /* Covers area without stretching */
+}
+
+/* Description under image */
+.gallery-item p {
+    padding: 15px;                    /* Space around text */
+    text-align: center;               /* Center text */
+    background-color: #f9f9f9;        /* Light gray background */
+}
+
+/* ========== FOOTER STYLES ========== */
+footer {
+    background-color: #333;           /* Dark background */
+    color: white;                     /* White text */
+    text-align: center;               /* Center text */
+    padding: 30px;                    /* Space inside footer */
+    margin-top: 50px;                 /* Space above footer */
+}
+
+/* Paragraphs in footer */
+footer p {
+    margin: 10px 0;                   /* Space between lines */
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+/* These styles apply only on screens smaller than 768px (tablets & phones) */
+@media (max-width: 768px) {
+    /* Make navbar vertical on small screens */
+    .navbar {
+        flex-direction: column;       /* Stack items vertically */
+        text-align: center;           /* Center text */
+    }
+    
+    /* Adjust spacing for vertical navbar */
+    .navbar li {
+        margin: 5px 0;                /* Vertical spacing */
+    }
+    
+    /* Stack boxes vertically on small screens */
+    .division-container {
+        flex-direction: column;       /* Stack boxes vertically */
+    }
+    
+    /* Make boxes full width */
+    .box {
+        width: 100%;                  /* Full width on small screens */
+    }
+    
+    /* Adjust gallery for small screens */
+    .gallery-item {
+        width: 100%;                  /* Full width */
+        max-width: 400px;             /* But not wider than 400px */
+    }
+}

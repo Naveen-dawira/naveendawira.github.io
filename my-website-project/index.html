@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MY OWN WEBSITE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>  
+            <li><a href="#form">Form</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <h1>Student Portal</h1>
+        <p>We are Limitless</p>
+    </header>
+
+    <div class="welcome-box">
+        <h1>Welcome to IoBM, Karachi.</h1>
+    </div>
+
+    <section id="form" class="section">
+        <h2>Form</h2>
+        
+        <div class="form-box">
+            <h3>Login Credentials</h3>
+            <form>
+                <label>Username:</label>
+                <input type="text" placeholder="Enter username">
+                
+                <label>Password:</label>
+                <input type="password" placeholder="Enter password">
+                
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div class="form-box">
+            <h3>Registration Form</h3>
+            <form>
+                <label>Full Name:</label>
+                <input type="text">
+                
+                <label>Email:</label>
+                <input type="email">
+                
+                <div class="radio-group">
+                    <p>Gender:</p>
+                    <label><input type="radio" name="gender"> Male</label>
+                    <label><input type="radio" name="gender"> Female</label>
+                </div>
+                
+                <div class="checkbox-group">
+                    <p>Choose Degree:</p>
+                    <label><input type="checkbox"> BSCS</label>
+                    <label><input type="checkbox"> BBA</label>
+                    <label><input type="checkbox"> ARTS</label>
+                </div>
+                
+                <label>Country:</label>
+                <select>
+                    <option>Pakistan</option>
+                    <option>USA</option>
+                    <option>Others</option>
+                </select>
+                
+                <label>Why IoBM?</label>
+                <textarea rows="3"></textarea>
+                
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <section id="about" class="section">
+        <h2>More About IoBM</h2>
+        
+        <div class="division-container">
+            <div class="box box1">
+                <h3>Sports</h3>
+                <p>IoBM encourages an active lifestyle through a wide range of sports activities. 
+Students participate in cricket, football, basketball, and indoor games, 
+promoting teamwork, discipline, and physical fitness.</p>
+            </div>
+            
+            <div class="box box2">
+                <h3>ECA's</h3>
+                <p>Extra-curricular activities at IoBM help students explore their talents beyond academics. 
+These activities include debates, dramatics, competitions, and workshops that build 
+confidence and leadership skills.</p>
+            </div>
+            
+            <div class="box box3">
+                <h3>Societies</h3>
+                <p>Student societies at IoBM provide platforms for intellectual growth and collaboration. 
+Academic, cultural, and social societies allow students to engage in events, discussions, 
+and community initiatives.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <h2>Insights into IoBM</h2>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/1.jpg" alt="Image 1">
+            </div>
+            
+            <div class="gallery-item">
+                <img src="images/2.jpg" alt="Image 2">
+            </div>
+        </div>
+
+        <div class="iframe-box">
+            <h3>Iobm's Own Website</h3>
+            <!-- iframe shows external webpage inside our page -->
+            <iframe src="https://www.iobm.edu.pk" title="Search"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Insitute of Bussiness Management</p>
+        <p>Contact: support@iobm.edu.pk</p>
+    </footer>
+
+</body>
+</html>
